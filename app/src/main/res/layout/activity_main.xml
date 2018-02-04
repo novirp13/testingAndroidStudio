@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.studycase.MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="255dp"
+        android:layout_height="82dp"
+        android:layout_alignEnd="@+id/editText2"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:gravity="center_vertical"
+        android:text="MAKAN MALAM"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:text="MAKAN MALAM" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="108dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="dengan Milea"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="99dp"
+        tools:text="dengan Milea" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="375dp"
+        android:layout_height="51dp"
+        android:layout_above="@+id/editText3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="31dp"
+        android:ems="10"
+        android:inputType="text|textPersonName"
+        android:text="Nasi Uduk"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="179dp"
+        tools:text="Nasi Uduk" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="379dp"
+        android:layout_height="48dp"
+        android:layout_above="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        android:inputType="textPersonName|number"
+        android:text="2"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="271dp"
+        tools:text="2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="120dp"
+        android:layout_height="46dp"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_gravity="center_horizontal"
+        android:layout_toLeftOf="@+id/textView4"
+        android:layout_toStartOf="@+id/textView4"
+        android:background="@android:color/holo_red_light"
+        android:onClick="launchSecondActivity"
+        android:text="Eatbus"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="375dp"
+        tools:text="Eatbus" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="120dp"
+        android:layout_height="46dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="80dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:background="@android:color/holo_red_light"
+        android:onClick="launchThirdActivity"
+        android:text="Abnormal"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="246dp"
+        tools:layout_editor_absoluteY="375dp"
+        tools:text="Abnormal" />
+
+</RelativeLayout>
